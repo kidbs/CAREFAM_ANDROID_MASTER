@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- 상단 이미지 -->
+        <ImageView
+            android:id="@+id/image_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_launcher_background"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true" />
+
+
+
+        <!-- 가게 이름 -->
+        <TextView
+            android:id="@+id/text_view_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="가게 이름"
+            android:textSize="20sp"
+            android:padding="16dp" />
+
+        <!-- 주소 -->
+
+        <!-- 전화번호 -->
+        <TextView
+            android:id="@+id/text_view_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="주소"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_view_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="전화번호"
+            android:textSize="16sp"
+            android:padding="16dp" />
+
+        <!-- 주차 가능 여부 -->
+        <TextView
+            android:id="@+id/text_view_parking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="주차 가능 여부"
+            android:textSize="16sp"
+            android:padding="16dp" />
+
+        <!-- 운영 시간 -->
+        <TextView
+            android:id="@+id/text_view_hours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="운영 시간"
+            android:textSize="16sp"
+            android:padding="16dp" />
+
+        <!-- 홈페이지 -->
+        <TextView
+            android:id="@+id/text_view_website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="홈페이지"
+            android:textSize="16sp"
+            android:padding="16dp" />
+
+        <!-- 휴일 -->
+        <TextView
+            android:id="@+id/text_view_holiday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="휴일"
+            android:textSize="16sp"
+            android:padding="16dp" />
+
+<!--        &lt;!&ndash; 게시물 작성 버튼 &ndash;&gt;-->
+<!--        <Button-->
+<!--            android:id="@+id/button_write_post"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="end|bottom"-->
+<!--            android:text="게시물 작성" />-->
+
+        <Button
+            android:id="@+id/button_write_post"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:text="+"
+            android:textSize="30sp"
+            android:background="@drawable/circle_button"
+            android:textColor="@color/project_button_text_color"
+            android:outlineProvider="none"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </LinearLayout>
+</ScrollView>

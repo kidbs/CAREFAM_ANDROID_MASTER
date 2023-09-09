@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">CAREFAM</string>
+    <string name="top_banner_description">Top Banner</string>
+    <string name="home_guide_txt">반려동물과 함께하는 즐거운 하루!</string>
+    <string name="ibtn_camp">Camp</string>
+    <string name="camp_txt">숙소</string>
+    <string name="ibtn_trip">Travel</string>
+    <string name="trip_txt">여행</string>
+    <string name="ibtn_food">Food</string>
+    <string name="food_txt">음식</string>
+    <string name="ibtn_cult">Culture</string>
+    <string name="cult_txt">시설</string>
+    <string name="ibtn_buty">Beauty</string>
+    <string name="buty_txt">미용</string>
+    <string name="ibtn_medi">Medical</string>
+    <string name="medi_txt">의료</string>
+    <string name="search_guide">검색어를 입력해주세요.</string>
+
+    <string name="btn_main_home">홈</string>
+    <string name="btn_main_search">지역별</string>
+    <string name="btn_main_map">내주변</string>
+    <string name="btn_main_account">MY</string>
+
+
+<!-- 지역별버튼 데이터 -->
+    <string name="btn_search_seoul">서울특별시</string>
+    <string name="btn_search_busan">부산광역시</string>
+    <string name="btn_search_incheon">인천광역시</string>
+    <string name="btn_search_daegu">대구광역시</string>
+    <string name="btn_search_deajeon">대전광역시</string>
+    <string name="btn_search_gwangju">광주광역시</string>
+    <string name="btn_search_ulsan">울산광역시</string>
+    <string name="btn_search_gyeonggi">경기도</string>
+    <string name="btn_search_gyeongsang">경상도</string>
+    <string name="btn_search_jeolla">전라도</string>
+    <string name="btn_search_chungcheong">충청도</string>
+    <string name="btn_search_gangwon">강원도</string>
+    <string name="btn_search_sejoing">세종\n특별자치시</string>
+    <string name="btn_search_jeju">제주\n특별자치도</string>
+
+<!-- 로그인 & 회원가입 -->
+<!--    로그인-->
+    <string name="txt_loginid">아이디를 입력해주세요.</string>
+    <string name="txt_loginpassword">비밀번호를 입력해주세요.</string>
+    <string name="btn_login">로그인</string>
+    <string name="btn_join">회원가입</string>
+<!--    회원가입-->
+    <string name="txt_joinguide">회원가입 페이지입니다.</string>
+    <string name="txt_titlename">이름</string>
+    <string name="txt_name">이름을 입력하세요.</string>
+    <string name="txt_titlenickname">아이디</string>
+    <string name="txt_btndoublecheck">중복확인</string>
+    <string name="txt_nickname">사용하실 아이디를 입력해주세요.</string>
+    <string name="txt_titleemail">이메일주소</string>
+    <string name="txt_email">이메일 주소를 입력해주세요.</string>
+    <string name="txt_titlepassword">비밀번호</string>
+    <string name="txt_password">비밀번호(8자이상)</string>
+    <string name="txt_titlepasswordcheck">비밀번호 확인</string>
+    <string name="txt_passwordcheck">비밀번호 확인</string>
+
+
+<!--    방명록-->
+    <string name="example_comment">안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요\n안녕하세요 안녕하세요 안녕하세요 안녕하세요 안녕하세요</string>
+
+</resources>
+
+    <!--<string name="btn_main_end">btn_header_right</string>-->

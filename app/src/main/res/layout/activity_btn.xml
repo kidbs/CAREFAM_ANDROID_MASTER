@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:textStyle="bold"
+                android:textSize="23dp"/>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/app_bar">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/btn_category"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/project_button_color">
+
+                <Button
+                    android:id="@+id/btn_camp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="@string/camp_txt"
+                    android:textColor="@color/project_button_text_color"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/btn_frag_text_size" />
+
+                <Button
+                    android:id="@+id/btn_trip"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="@string/trip_txt"
+                    android:textColor="@color/project_button_text_color"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/btn_frag_text_size" />
+
+                <Button
+                    android:id="@+id/btn_food"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="@string/food_txt"
+                    android:textColor="@color/project_button_text_color"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/btn_frag_text_size" />
+
+                <Button
+                    android:id="@+id/btn_cult"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="@string/cult_txt"
+                    android:textColor="@color/project_button_text_color"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/btn_frag_text_size" />
+
+                <Button
+                    android:id="@+id/btn_buty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="@string/buty_txt"
+                    android:textColor="@color/project_button_text_color"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/btn_frag_text_size" />
+
+                <Button
+                    android:id="@+id/btn_medi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:text="@string/medi_txt"
+                    android:textColor="@color/project_button_text_color"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/btn_frag_text_size" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+<!--&lt;!&ndash; 해야할것 : 지역별 선택버튼들 만들기 &ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/select_region"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/header_title">-->
+
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:foreground="@drawable/btn_stroke"-->
+<!--            android:background="@null"-->
+<!--            android:text="지역별"/>-->
+
+<!--        <Button-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:foreground="@drawable/btn_stroke"-->
+<!--            android:background="@null"-->
+<!--            android:text="시명칭"/>-->
+
+<!--    </LinearLayout>-->
+
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentContainerView"
+        android:name="com.jgy.animal.fragment.test.TestFrag"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_title"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout="@layout/fragment_test"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
